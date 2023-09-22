@@ -12,7 +12,7 @@ sleep 1
 echo "You can change the folder of poems"
 sleep 1
 echo "... usig the 2nd input argument. Default is $search_dir"
-slee 5
+sleep 5
 
 if [[ "$1" != "" ]]; then
   delay=$1
