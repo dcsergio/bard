@@ -11,15 +11,15 @@ if [[ "$1" != "" ]]; then
 fi
 
 while true; do
-        clear
-        search_dir="poems"
-        for entry in "$search_dir"/*; do
-                if [[ -f "$entry" ]] ; then
-                        while read line; do
-                                echo $line
-                                sleep $delay
-                        done < $entry
-                        clear
-                fi
-        done
+    clear
+    search_dir="poems"
+    for entry in "$search_dir"/*; do
+        if [[ -f "$entry" ]] ; then
+            while read line; do
+                echo $line
+                sleep $delay
+            done < $entry
+            clear
+        fi
+    done
 done
