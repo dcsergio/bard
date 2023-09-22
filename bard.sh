@@ -7,7 +7,7 @@ sleep 1
 echo "You can change delay (seconds) between lines"
 sleep 1
 echo "using input argument. Deafult is $delay"
-sleep 1
+sleep 5
 
 if [[ "$1" != "" ]]; then
   delay=$1
