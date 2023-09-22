@@ -11,7 +11,7 @@ echo "... using the 1st input argument. Default is $delay"
 sleep 1
 echo "You can change the folder of poems"
 sleep 1
-echo "... usig the 2nd input argument. Default is $searc_dir"
+echo "... usig the 2nd input argument. Default is $search_dir"
 slee 5
 
 if [[ "$1" != "" ]]; then
