@@ -1,21 +1,29 @@
 #!/bin/bash
 
 delay=100
+search_dir="poems"
 
 echo "This is Sergio's Bard"
 sleep 1
 echo "You can change delay (seconds) between lines"
 sleep 1
-echo "using input argument. Deafult is $delay"
-sleep 5
+echo "... using the 1st input argument. Default is $delay"
+sleep 1
+echo "You can change the folder of poems"
+sleep 1
+echo "... usig the 2nd input argument. Default is $searc_dir"
+slee 5
 
 if [[ "$1" != "" ]]; then
   delay=$1
 fi
 
+if [[ "$2" != "" ]]; then
+  search_dir=$2
+fi
+
 while true; do
     clear
-    search_dir="poems"
     for entry in "$search_dir"/*; do
         if [[ -f "$entry" ]] ; then
             while read line; do
