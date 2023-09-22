@@ -3,11 +3,11 @@
 delay=100
 
 echo "This is Sergio's Bard"
-sleep $delay
+sleep 1
 echo "You can change delay (seconds) between lines"
-sleep $delay
+sleep 1
 echo "using input argument. Deafult is $delay"
-sleep $delay
+sleep 1
 
 if [[ "$1" != "" ]]; then
   delay=$1
