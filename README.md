@@ -5,4 +5,8 @@ After a while, the connection went down, due to inactivity of console.
 So, I wrote this simple script, that keeps the console busy, 
 showing on the screen some text, taken from files in the "poems" folder.
 
-Is is very simple, all contributions and improvements are welcome.
+It is very simple to use:
+- copy into your favourite folder
+- launch it :-)
+
+All contributions and improvements are welcome.
