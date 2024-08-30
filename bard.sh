@@ -3,6 +3,7 @@
 delay=100
 search_dir="poems"
 
+clear
 echo "This is Sergio's Bard"
 sleep 1
 echo "You can change delay (seconds) between lines"
@@ -22,9 +23,13 @@ if [[ "$2" != "" ]]; then
   search_dir=$2
 fi
 
+files=("$search_dir"/*)
+
+shuffled=($(shuf -e "${files[@]}"))
+
 while true; do
     clear
-    for entry in "$search_dir"/*; do
+    for entry in "${shuffled[@]}"; do
         if [[ -f "$entry" ]] ; then
             while read line; do
                 echo $line
